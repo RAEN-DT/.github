@@ -10,10 +10,10 @@
 
 <p align="center">
   <a href="https://github.com/RAEN-DT/PyNet/releases"><img src="https://img.shields.io/github/v/release/RAEN-DT/PyNet?label=release&color=f78166" alt="Release"/></a>
-  <img src="https://img.shields.io/pypi/v/pynet-mcp-bridge?label=pynet-mcp-bridge&color=2b7489" alt="PyPI"/>
-  <img src="https://img.shields.io/badge/python-3.10%20–%203.13-blue" alt="Python"/>
+  <a href="https://pypi.org/project/pynet-mcp-bridge/"><img src="https://img.shields.io/pypi/v/pynet-mcp-bridge?label=pypi&color=2b7489" alt="PyPI"/></a>
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"/>
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Windows"/>
-  <img src="https://img.shields.io/badge/hosts-Navisworks%20·%20Revit%20·%20Civil%203D-orange" alt="Hosts"/>
+  <img src="https://img.shields.io/badge/hosts-Navisworks%20%C2%B7%20Revit%20%C2%B7%20Civil%203D-orange" alt="Hosts"/>
   <img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP"/>
 </p>
 
@@ -37,11 +37,11 @@ the script gets rewritten. No export, no round-trip, no waiting on a developer.
 
 ```mermaid
 flowchart LR
-    U["You<br/><i>natural language</i>"] --> AI["Your AI client<br/>Claude · Copilot · Codex · Cline</>"]
-    AI <-->|MCP| B["PyNET Bridge<br/>static validator</>"]
-    B <-->|Local Communication| P["PyNET Plugin<br/>Python.NET engine</>"]
-    P <--> H["Navisworks · Revit · Civil 3D<br/>live model</>"]
-    L["PyNET Library<br/>scripts + API stubs</>"] -.->|context| AI
+    U["You<br/>natural language"] --> AI["Your AI client<br/>Claude · Copilot · Codex"]
+    AI <-->|MCP| B["PyNET Bridge<br/>static validator"]
+    B <-->|Local Communication| P["PyNET Plugin<br/>Python.NET engine"]
+    P <--> H["Navisworks · Revit<br/>Civil 3D"]
+    L["PyNET Library<br/>scripts + API stubs"] -.->|context| AI
     P -.->|.pnt package| V["VS Code Viewer"]
     AI <-->|drives the scene| V
 
@@ -51,9 +51,9 @@ style H fill:#D5F5E3,color:#2E5E4E
 style V fill:#E8DAEF,color:#4B3F72
 ```
 
-Every arrow above stays on your machine. The bridge talks to the plugin over a Windows named pipe;
-the viewer binds to `127.0.0.1`. The only thing that ever leaves is the conversation you have with
-the AI provider you chose.
+Every arrow above stays on your machine — the bridge, the plugin and the viewer all communicate
+locally. The only thing that ever leaves is the conversation you have with the AI provider you
+chose.
 
 ---
 
@@ -105,8 +105,8 @@ Step 4 is the point. Everything before it, other tools do.
 
 ## Start here
 
-> **Requirements:** Windows · Python **3.10 – 3.13** (3.14 is not supported yet by the `pythonnet`
-> runtime) · the Autodesk host you want to drive.
+> **Requirements:** Windows · Python **3.10 or higher** (3.14 supported) · the Autodesk host you
+> want to drive.
 
 **The one-step route** — the [VS Code extension](https://github.com/RAEN-DT/PyNetVSCode) installs
 the bridge, configures every AI client it finds, and gives you the BIM viewer:
@@ -181,7 +181,7 @@ Full policy: **https://privacy.raendt.com/**
 | 🐛 **Bugs** | Open an issue in the relevant repository. |
 | ❓ **Questions** | [PyNET FAQs](https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs) |
 | ✉️ **Contact** | [info@raendt.com](mailto:info@raendt.com) |
-| 🖥️ **Platform** | Windows only — the Autodesk hosts and the named-pipe IPC are Windows-bound. |
+| 🖥️ **Platform** | Windows only — the Autodesk hosts and the local communication layer are Windows-bound. |
 
 ---
 
