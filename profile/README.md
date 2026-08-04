@@ -9,18 +9,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/RAEN-DT/PyNet/releases"><img src="https://img.shields.io/github/v/release/RAEN-DT/PyNet?label=release&color=f78166" alt="Release"/></a>
   <img src="https://img.shields.io/pypi/v/pynet-mcp-bridge?label=pynet-mcp-bridge&color=2b7489" alt="PyPI"/>
   <img src="https://img.shields.io/badge/python-3.10%20–%203.13-blue" alt="Python"/>
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Windows"/>
   <img src="https://img.shields.io/badge/hosts-Navisworks%20·%20Revit%20·%20Civil%203D-orange" alt="Hosts"/>
   <img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP"/>
-</p>
-
-<p align="center">
-  <a href="https://raendt.com">Website</a> ·
-  <a href="https://github.com/RAEN-DT/PyNet/releases">Download</a> ·
-  <a href="https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs">FAQs</a> ·
-  <a href="mailto:info@raendt.com">info@raendt.com</a>
 </p>
 
 ---
@@ -43,17 +37,18 @@ the script gets rewritten. No export, no round-trip, no waiting on a developer.
 
 ```mermaid
 flowchart LR
-    U["🗣️ You<br/><i>natural language</i>"] --> AI["🤖 Your AI client<br/><small>Claude · Copilot · Codex · Cline</small>"]
-    AI <-->|MCP| B["🛡️ PyNET Bridge<br/><small>static validator</small>"]
-    B <-->|named pipe| P["⚙️ PyNET Plugin<br/><small>Python.NET engine</small>"]
-    P <--> H["🏗️ Navisworks · Revit · Civil 3D<br/><small>live model</small>"]
-    L["📚 PyNET Library<br/><small>scripts + API stubs</small>"] -.->|context| AI
-    P -.->|.pnt package| V["🧊 VS Code Viewer"]
+    U["You<br/><i>natural language</i>"] --> AI["Your AI client<br/>Claude · Copilot · Codex · Cline</>"]
+    AI <-->|MCP| B["PyNET Bridge<br/>static validator</>"]
+    B <-->|Local Communication| P["PyNET Plugin<br/>Python.NET engine</>"]
+    P <--> H["Navisworks · Revit · Civil 3D<br/>live model</>"]
+    L["PyNET Library<br/><>scripts + API stubs</>"] -.->|context| AI
+    P -.->|.pnt package| V["VS Code Viewer"]
     AI <-->|drives the scene| V
 
-    style B fill:#1f6feb,color:#fff
-    style P fill:#f78166,color:#000
-    style H fill:#238636,color:#fff
+style B fill:#D6EAF8,color:#34495E
+style P fill:#FADADD,color:#5D4E4E
+style H fill:#D5F5E3,color:#2E5E4E
+style V fill:#E8DAEF,color:#4B3F72
 ```
 
 Every arrow above stays on your machine. The bridge talks to the plugin over a Windows named pipe;
@@ -87,7 +82,6 @@ experienced coordinator would apply, so the AI runs the whole process instead of
 | **QuantityTakeoff** | Revit | 5D extraction: matches model quantities to a reference budget and builds the measurement breakdown. |
 | **WindSiting** | Civil 3D + GIS | Wind-farm siting for any zone in Spain — terrain, wind resource, exclusions and a suitability heat map as native Civil 3D objects. |
 | **PowerlineFireRisk** | Civil 3D + GIS | Wildfire exposure of a transmission line from Sentinel-2 imagery, ranked by segment, draped on the terrain. |
-| **DataCenterGenerative** | Revit | Generative rack layout for a data hall — hot/cold aisles clipped to the real room boundary, with comparable variants and KPIs. |
 
 ---
 
