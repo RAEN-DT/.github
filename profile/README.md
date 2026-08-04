@@ -33,7 +33,7 @@ the script gets rewritten. No export, no round-trip, no waiting on a developer.
 flowchart LR
     U["You<br/>natural language"] --> AI["Your AI client<br/>Claude · Copilot · Codex"]
     AI <-->|MCP| B["PyNET Bridge<br/>static validator"]
-    B <-->|Local Communication| P["PyNET Plugin<br/>Python.NET engine"]
+    B <-->|Local Communication| P["PyNET Plugin<br/>Python engine"]
     P <--> H["Navisworks · Revit<br/>Civil 3D"]
     L["PyNET Library<br/>scripts + API stubs"] -.->|context| AI
     P -.->|.pnt package| V["VS Code Viewer"]
