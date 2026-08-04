@@ -3,12 +3,6 @@
 </p>
 
 <p align="center">
-  <b>We make AI actually operate BIM software.</b><br/>
-  Not a chatbot bolted onto Autodesk — an execution engine that writes, validates,<br/>
-  runs and fixes its own Python inside Navisworks, Revit and Civil 3D.
-</p>
-
-<p align="center">
   <a href="https://github.com/RAEN-DT/PyNet/releases"><img src="https://img.shields.io/github/v/release/RAEN-DT/PyNet?label=release&color=f78166" alt="Release"/></a>
   <a href="https://pypi.org/project/pynet-mcp-bridge/"><img src="https://img.shields.io/pypi/v/pynet-mcp-bridge?label=pypi&color=2b7489" alt="PyPI"/></a>
   <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"/>
