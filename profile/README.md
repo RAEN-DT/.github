@@ -41,7 +41,7 @@ flowchart LR
     AI <-->|MCP| B["PyNET Bridge<br/>static validator</>"]
     B <-->|Local Communication| P["PyNET Plugin<br/>Python.NET engine</>"]
     P <--> H["Navisworks · Revit · Civil 3D<br/>live model</>"]
-    L["PyNET Library<br/><>scripts + API stubs</>"] -.->|context| AI
+    L["PyNET Library<br/>scripts + API stubs</>"] -.->|context| AI
     P -.->|.pnt package| V["VS Code Viewer"]
     AI <-->|drives the scene| V
 
