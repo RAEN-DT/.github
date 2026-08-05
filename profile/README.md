@@ -1,33 +1,53 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNet/main/Assets/PyNetLogo.png" width="360" alt="PyNET Platform"/>
+  <img src="https://raw.githubusercontent.com/RAEN-DT/.github/main/Assets/RaenHeader.png" width="820" alt="RAEN Digital Tools — The Bridge between AI and BIM"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/RAEN-DT/PyNet/releases"><img src="https://img.shields.io/github/v/release/RAEN-DT/PyNet?label=release&color=f78166" alt="Release"/></a>
-  <a href="https://pypi.org/project/pynet-mcp-bridge/"><img src="https://img.shields.io/pypi/v/pynet-mcp-bridge?label=pypi&color=2b7489" alt="PyPI"/></a>
-  <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"/>
-  <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Windows"/>
-  <img src="https://img.shields.io/badge/hosts-Navisworks%20%C2%B7%20Revit%20%C2%B7%20Civil%203D-orange" alt="Hosts"/>
-  <img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP"/>
+  <a href="https://raendt.com">raendt.com</a> &middot;
+  <a href="mailto:info@raendt.com">info@raendt.com</a> &middot;
+  Madrid, Spain
 </p>
 
 ---
 
-## The problem we solve
+## Who we are
 
-BIM automation has always meant one of two things: a plugin someone else wrote that does *almost*
-what you need, or a script you write yourself, from scratch, every time the project changes.
+**RAEN Digital Tools** is a software company specialised in automation and artificial intelligence
+for BIM environments. We come from digital engineering, not from generic software — the tooling
+here was built while coordinating real projects, and it shows in what it chooses to solve.
 
-PyNET removes that choice. You describe the task in your own words; the AI writes the Python,
-it runs **inside the live model**, and if the Autodesk API rejects it, the error comes back and
-the script gets rewritten. No export, no round-trip, no waiting on a developer.
+We work three ways: as a **product** you install, as an **engine** partners extend, and as an
+**implementation project** we run alongside your team.
 
-> **This is not code generation.** The AI does not hand you a snippet to paste. It executes,
-> reads the result, and acts on it — inside the process, on your machine.
+| | |
+| :--- | :--- |
+| 🧭 **Specialised team** | Digital engineering and software development working together, continuously. |
+| 🛠️ **Our own technology** | Tooling standardised over years of real BIM coordination, not adapted from elsewhere. |
+| 📈 **Scalable by design** | Solutions built to grow with your organisation, at any project size. |
+| 🤝 **Continuous support** | We stay from design through deployment and into the evolution of the solution. |
 
 ---
 
-## How it fits together
+## What we do
+
+| | |
+| :--- | :--- |
+| **BIM automation** | Repetitive coordination, auditing and reporting work, automated inside the Autodesk tools your team already uses. |
+| **AI integration** | Connect your AI assistant to live models so it can query, analyse and modify them — not just talk about them. |
+| **Custom development** | Workflows encoding your own engineering criteria: tolerance rules, BEP standards, budget structures. |
+| **Deployment & training** | Company-wide rollout, with the people side handled as seriously as the technical one. |
+
+---
+
+## PyNET Platform — our product
+
+Our platform lets an AI assistant operate **Autodesk Navisworks, Revit and Civil 3D** directly.
+You describe a task in your own words; the assistant writes the Python, it runs **inside the live
+model**, and when the Autodesk API rejects something the error comes back and the script gets
+rewritten.
+
+> It executes, reads the result, and acts on it — inside the process, on your machine.
+> Nothing is handed to you to paste.
 
 ```mermaid
 flowchart LR
@@ -49,6 +69,15 @@ Every arrow above stays on your machine — the bridge, the plugin and the viewe
 locally. The only thing that ever leaves is the conversation you have with the AI provider you
 chose.
 
+<p align="center">
+  <a href="https://github.com/RAEN-DT/PyNet/releases"><img src="https://img.shields.io/github/v/release/RAEN-DT/PyNet?label=release&color=f78166" alt="Release"/></a>
+  <a href="https://pypi.org/project/pynet-mcp-bridge/"><img src="https://img.shields.io/pypi/v/pynet-mcp-bridge?label=pypi&color=2b7489" alt="PyPI"/></a>
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"/>
+  <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Windows"/>
+  <img src="https://img.shields.io/badge/hosts-Navisworks%20%C2%B7%20Revit%20%C2%B7%20Civil%203D-orange" alt="Hosts"/>
+  <img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP"/>
+</p>
+
 ---
 
 ## The repositories
@@ -62,12 +91,13 @@ chose.
 
 ---
 
-## Workflow Skills — engineering criteria, not just code
+## Engineering criteria, not just code
 
-The library ships **domain workflows**, not only API examples. Each one encodes the judgement an
-experienced coordinator would apply, so the AI runs the whole process instead of a single command.
+The workflows we ship encode the judgement an experienced coordinator applies, so the assistant
+runs a whole process rather than a single command. This is where the digital-engineering side of
+the company shows up in the software.
 
-| Skill | Host | What it does |
+| Workflow | Host | What it does |
 | :--- | :--- | :--- |
 | **ClashDetection** | Navisworks | Builds the clash matrix from dynamic SearchSets, runs the tests, and auto-triages results against tolerance rules. |
 | **ClashCoordination** | Navisworks → Revit | Reads reviewed clashes and generates the corresponding sleeves and floor openings in Revit — across two hosts, in one conversation. |
@@ -144,7 +174,7 @@ measured. **No licence required to open and explore a package.**
 | Tier | For |
 | :--- | :--- |
 | **Viewer** | Free, forever. Open and explore any `.pnt` package. |
-| **Beta Trial** | 30 days of full platform access — request at [info@raendt.com](mailto:info@raendt.com). |
+| **Trial** | 30 days of full platform access — request at [info@raendt.com](mailto:info@raendt.com). |
 | **Basic** | One Autodesk host. |
 | **Pro** | All hosts, simultaneously. |
 | **Enterprise** | Company-wide deployment with an implementation project. |
@@ -168,13 +198,14 @@ Full policy: **https://privacy.raendt.com/**
 
 ---
 
-## Support
+## Work with us
 
 | | |
 | :--- | :--- |
+| 💼 **Projects & deployment** | [info@raendt.com](mailto:info@raendt.com) |
+| 🌐 **Website** | [raendt.com](https://raendt.com) |
 | 🐛 **Bugs** | Open an issue in the relevant repository. |
 | ❓ **Questions** | [PyNET FAQs](https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs) |
-| ✉️ **Contact** | [info@raendt.com](mailto:info@raendt.com) |
 | 🖥️ **Platform** | Windows only — the Autodesk hosts and the local communication layer are Windows-bound. |
 
 ---
