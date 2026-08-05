@@ -120,15 +120,32 @@ the whole process, not a single command.
 
 ## 🧊 PyNET Viewer for VS Code
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNetVSCode/main/Assets/PynetViewer.png" width="360" alt="PyNET Viewer"/>
+</p>
+
 The **[VS Code extension](https://github.com/RAEN-DT/PyNetVSCode)** puts a 3D BIM viewer inside the
 editor and sets up the MCP bridge for every AI client it finds — one install covers both.
 
 Export a `.pnt` package — a single self-contained file with the federated models and the clash
 data — and open it in VS Code. Spatial tree, properties, sections, measurements, clash results.
 
-The interesting part: your AI drives the same scene while it talks. It isolates the discipline it
-is discussing, highlights both sides of a clash in red and green, and points at the element it just
-measured. **No licence required to open and explore a package.**
+### 🤝 The assistant and the viewer, talking to each other
+
+The viewer is not a passive window. It is wired to the same MCP bridge as your Autodesk hosts, so
+the assistant can **drive the scene while it explains it** — isolate a discipline, highlight both
+sides of a clash, read an element's properties, refit the camera. You ask in the chat panel; the
+answer appears in the text *and* in the model beside it.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNetVSCode/main/Assets/Pynet_view_AI.png" width="900" alt="Claude breaking down clash counts in the VS Code chat panel while the PyNET Viewer highlights the clashing pair in red and green"/>
+</p>
+
+Above: the assistant breaks down 3,706 clashes across five federated models, and the element pair
+it is describing is already highlighted in the viewer — red against green — without anyone touching
+the 3D view.
+
+**No licence required to open and explore a package.**
 
 ---
 
