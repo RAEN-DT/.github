@@ -10,7 +10,7 @@
 
 ---
 
-## Who we are
+## 🏢 Who we are
 
 **RAEN Digital Tools** is a software company specialised in automation and artificial intelligence
 for BIM environments. We come from digital engineering, not from generic software — the tooling
@@ -28,7 +28,7 @@ We work three ways: as a **product** you install, as an **engine** partners exte
 
 ---
 
-## What we do
+## ⚙️ What we do
 
 | | |
 | :--- | :--- |
@@ -39,7 +39,11 @@ We work three ways: as a **product** you install, as an **engine** partners exte
 
 ---
 
-## PyNET Platform — our product
+## 🚀 PyNET Platform
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNet/main/Assets/PyNetLogo.png" width="360" alt="PyNET Platform"/>
+</p>
 
 Our platform lets an AI assistant operate **Autodesk Navisworks, Revit and Civil 3D** directly.
 You describe a task in your own words; the assistant writes the Python, it runs **inside the live
@@ -80,7 +84,7 @@ chose.
 
 ---
 
-## The repositories
+## 🔗 The repositories
 
 | | Repository | What it is |
 | :--- | :--- | :--- |
@@ -91,7 +95,7 @@ chose.
 
 ---
 
-## Engineering criteria, not just code
+## 🏗️ Engineering criteria, not just code
 
 The workflows we ship encode the judgement an experienced coordinator applies, so the assistant
 runs a whole process rather than a single command. This is where the digital-engineering side of
@@ -109,7 +113,7 @@ the company shows up in the software.
 
 ---
 
-## What it looks like in practice
+## 🎬 What it looks like in practice
 
 In [this recorded session](https://www.youtube.com/watch?v=Vw7ig8TItng), an AI client connects to
 **Revit and Navisworks at the same time** and runs a coordination cycle end to end:
@@ -127,7 +131,7 @@ Step 4 is the point. Everything before it, other tools do.
 
 ---
 
-## Start here
+## 📥 Start here
 
 > **Requirements:** Windows · Python **3.10 or higher** (3.14 supported) · the Autodesk host you
 > want to drive.
@@ -154,7 +158,7 @@ Detected and configured automatically: **Claude Desktop**, **Claude Code**, **Gi
 
 ---
 
-## The viewer is free
+## 🧊 The viewer is free
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/RAEN-DT/PyNet/main/Assets/PyNetPlatformStructure.png" width="880" alt="PyNET Platform structure"/>
@@ -169,7 +173,7 @@ measured. **No licence required to open and explore a package.**
 
 ---
 
-## Licensing
+## 🔑 Licensing
 
 | Tier | For |
 | :--- | :--- |
@@ -181,7 +185,7 @@ measured. **No licence required to open and explore a package.**
 
 ---
 
-## Security by design
+## 🔒 Security by design
 
 The sandbox is **closed on purpose**, and we do not widen it for convenience.
 
@@ -198,7 +202,7 @@ Full policy: **https://privacy.raendt.com/**
 
 ---
 
-## Work with us
+## ✉️ Work with us
 
 | | |
 | :--- | :--- |
