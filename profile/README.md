@@ -3,10 +3,12 @@
 </p>
 
 <p align="center">
-  <a href="https://raendt.com">raendt.com</a> &middot;
   <a href="mailto:info@raendt.com">info@raendt.com</a> &middot;
   Madrid, Spain
 </p>
+
+### 📥 Request your 30-day **Trial** here:
+Contact: **[info@raendt.com](mailto:info@raendt.com)** to request access.
 
 ---
 
@@ -126,8 +128,8 @@ the whole process, not a single command.
 
 The **[PyNET Viewer extension](https://marketplace.visualstudio.com/items?itemName=RAENDT.pynet-viewer)**
 puts a 3D BIM viewer inside the editor and sets up the MCP bridge for every AI client it finds —
-one install covers both. Install it from the Marketplace, or from the Extensions panel in VS Code
-by searching for *PyNET Viewer*.
+one install covers both. To install it, open the **Extensions** panel in VS Code and search for
+*PyNET Viewer*.
 
 Export a `.pnt` package — a single self-contained file with the federated models and the clash
 data — and open it in VS Code. Spatial tree, properties, sections, measurements, clash results.
@@ -163,6 +165,9 @@ access.
 | **Pro** | Access to a Pro license for the extension to integrate the Autodesk products available at the same time. |
 | **Enterprise** | Integrate PyNET in your company with an implementation project service. |
 
+**Start with a 30-day Trial.** Write to **[info@raendt.com](mailto:info@raendt.com)** and we set you
+up with full access. If it fits, you choose a plan; if not, you do nothing.
+
 ---
 
 ## 🔒 Security by design
@@ -179,18 +184,6 @@ The sandbox is **closed on purpose**, and we do not widen it for convenience.
   only the AI path is sandboxed.
 
 Full policy: **https://privacy.raendt.com/**
-
----
-
-## ✉️ Work with us
-
-| | |
-| :--- | :--- |
-| 💼 **Projects & deployment** | [info@raendt.com](mailto:info@raendt.com) |
-| 🌐 **Website** | [raendt.com](https://raendt.com) |
-| 🐛 **Bugs** | Open an issue in the relevant repository. |
-| ❓ **Questions** | [PyNET FAQs](https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs) |
-| 🖥️ **Platform** | Windows only — the Autodesk hosts and the local communication layer are Windows-bound. |
 
 ---
 
