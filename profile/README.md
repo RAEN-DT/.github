@@ -124,8 +124,10 @@ the whole process, not a single command.
   <img src="https://raw.githubusercontent.com/RAEN-DT/PyNetVSCode/main/Assets/PynetViewer.png" width="360" alt="PyNET Viewer"/>
 </p>
 
-The **[VS Code extension](https://github.com/RAEN-DT/PyNetVSCode)** puts a 3D BIM viewer inside the
-editor and sets up the MCP bridge for every AI client it finds — one install covers both.
+The **[PyNET Viewer extension](https://marketplace.visualstudio.com/items?itemName=RAENDT.pynet-viewer)**
+puts a 3D BIM viewer inside the editor and sets up the MCP bridge for every AI client it finds —
+one install covers both. Install it from the Marketplace, or from the Extensions panel in VS Code
+by searching for *PyNET Viewer*.
 
 Export a `.pnt` package — a single self-contained file with the federated models and the clash
 data — and open it in VS Code. Spatial tree, properties, sections, measurements, clash results.
