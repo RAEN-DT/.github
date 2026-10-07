@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://www.raendt.com/">RAEN Digital Tools</a> &middot;
   <a href="mailto:info@raendt.com">info@raendt.com</a> &middot;
   Madrid, Spain
 </p>
